@@ -1,0 +1,485 @@
+@media screen and (max-width: 1350px) {
+    .internship .container {
+        max-width: 880px; /* Set your desired max-width */
+    }
+    
+    .swiper-slide img {
+        height: 400px;
+    }
+
+    .boxes .items .item-border .item h4 {
+        font-size: 18px;
+    }
+
+    .boxes .items .item-border .item h5 {
+        font-size: 16px;
+    }
+
+    .boxes .items .item-border .item p {
+        font-size: 13px;
+    }
+
+    .hobby .items .item img {
+        height: 300px;
+    }
+
+    .hobby .items .item:hover img {
+        transform: scale(1.05);
+    }
+
+    .portfolio-layer p {
+        font-size: 20px;
+    }
+
+    .contact form {
+        max-width: 65rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .contact form .input-box input,
+    .contact form .head input,
+    .contact form .title input,
+    .contact form textarea {
+        font-size: 1.3rem;
+    }
+
+    .contact form .btn {
+        margin-top: 1.8rem;
+        padding: 1.0rem 2.4rem;
+    }
+
+    .contact form .separate {
+        margin: 80px 0 30px;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+    .main .container .right h1 {
+        font-size: 38px;
+        padding: 20px 0;
+    }
+
+    .internship .container {
+        max-width: 780px; /* Set your desired max-width */
+    }
+    
+    .swiper-slide img {
+        height: 300px;
+        border-radius: 8px;
+    }
+
+    .swiper-slide h4 {
+        font-size: 22px;
+    }
+
+    .sentences p {
+        font-size: 15px;
+    }
+
+    .boxes .items .item-border .item h4 {
+        font-size: 16px;
+    }
+
+    .boxes .items .item-border .item {
+        gap: 12px;
+    }
+    
+    .boxes .items .item-border .item h5 {
+        font-size: 14px;
+    }
+
+    .boxes .items .item-border .item p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .main .container .right h1 {
+        padding: 40px 0 0;
+    }
+
+    .my-heading-image {
+        margin: 30px 0 0 30px;
+    }
+
+    .main .container .right h2 {
+        font-size: 23px;
+        padding: 10px 0;
+    }
+
+    .main .container .right {
+        margin: 60px 30px 0 0;
+    }
+
+    .aboutMe,
+    .hobby,
+    .contact{
+        margin: 80px 30px 0;
+    }
+
+    .aboutMe .container .right p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .internship {
+        margin: 80px 30px;
+    }
+
+    .education .container {
+        padding: 50px 30px;
+    }
+
+    .boxes .items .item-border .item img {
+        height: 200px;
+    }
+
+    .boxes .items .item-border .item h4 {
+        font-size: 14px;
+    }
+
+    .boxes .items .item-border .item {
+        gap: 12px;
+    }
+    
+    .boxes .items .item-border .item h5 {
+        font-size: 12px;
+    }
+
+    .boxes .items .item-border .item p {
+        font-size: 11px;
+    }
+
+    .contact h3 {
+        margin-bottom: 30px;
+    }
+
+    .contact form {
+        max-width: 60rem;
+        margin: .5rem auto;
+        text-align: center;
+        margin-bottom: 2.2rem;
+    }
+
+    .contact form .input-box input,
+    .contact form .head input,
+    .contact form .title input,
+    .contact form textarea {
+        font-size: 1rem;
+    }
+
+    .contact form .btn {
+        margin-top: 1.8rem;
+        padding: .8rem 2rem;
+    }
+
+    .contact form .separate {
+        margin: 50px 0 20px;
+    }
+
+    .contact form .sns a{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .bars {
+        font-size: 18px;
+    }
+    .main .container .right h1 {
+        font-size: 30px;
+    }
+    
+    .main .container .right {
+        margin: 60px 60px 0 0;
+    }
+
+    .main .container .right h2 {
+        font-size: 20px;
+    }
+
+    .aboutMe .container .left img {
+        width: 90%;
+        border-radius: 100px;
+    }
+
+    .sns {
+        margin-top: 10px;
+    }
+
+    .sns ul {
+        gap: 30px;
+        font-size: 28px;
+    }
+
+    .internship .container {
+        max-width: 580px; /* Set your desired max-width */
+    }
+
+    .swiper-slide img {
+        height: 240px;
+        border-radius: 8px;
+    }
+
+    .boxes .items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boxes .items .item-border {
+        width: 45%;
+    }
+
+    .hobby .items .item img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .main .container .right {
+        margin: 60px 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    .bars {
+        font-size: 15px;
+    }
+
+    .main .container .right h1 {
+        font-size: 25px;
+    }
+
+    .main .container .right h2 {
+        font-size: 16px;
+    }
+    
+    .main .container .right {
+        margin: 60px 60px 0 0;
+    }
+
+    .sns ul {
+        gap: 25px;
+        font-size: 22px;
+    }
+
+    .aboutMe h3,
+    .internship h3,
+    .education .container h3,
+    .hobby h3,
+    .contact h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    footer .name {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bars a{
+        padding: 0 20px;
+    }
+
+    .main .container .right {
+        margin: 60px 30px 0 0;
+    }
+
+    .boxes .items .item-border {
+        width: 80%;
+    }
+    .boxes .items .item-border .item h4 {
+        font-size: 20px;
+    }
+
+    .boxes .items .item-border .item img {
+        height: 200px;
+    }
+    
+    .boxes .items .item-border .item h5 {
+        font-size: 18px;
+    }
+    
+    .boxes .items .item-border .item p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 691px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+
+    .header .bars a {
+        color: #fff;
+    }
+
+    .header.sticky .bars a:hover {
+        color: cornflowerblue;
+    }
+
+    .header.sticky .bars a {
+        color: #1c1e53;
+    }
+
+    .bars a.active::before {
+        background-color: #fff;
+    }
+
+    .main {
+        background-image: url(./images/baseball.JPG);
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .my-heading-image {
+        display: none;
+    }
+
+    .main .container {
+        position: absolute;
+        top: 60px;
+        height: calc(100% - 60px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .container .right {
+        z-index: 1;
+        opacity: .9;
+        color: #fff;
+    }
+
+    .main .container .right h1 {
+        font-size: 40px;
+        padding: 0 0 20px;
+    }
+
+    .main .container .right h2 {
+        font-size: 30px;
+    }
+
+    .main .container .right .separate {
+        background-color: #fff;
+    }
+
+    .sns ul {
+        font-size: 30px;
+    }
+    .sns ul li a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        display: block;
+    }
+
+    .bars {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .header .bars a {
+        font-size: 15px;
+        margin: 10px 0;
+        color: #1c1e53;
+    }
+
+    .header.sticky .bars a {
+        font-size: 15px;
+        margin: 10px 0;
+        color: #1c1e53;
+    }
+
+    .header.sticky #menu {
+        color: #1c1e53;
+    }
+
+    .bars a::before {
+        display: none;
+    }
+
+    .bars.active {
+        display: flex;
+    }
+
+    .swiper-slide {
+        padding: 50px;
+    }
+
+    .swiper-slide img {
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .swiper-slide h4 {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .swiper-slide .sentences p {
+        font-size: 12px;
+    }
+
+    .boxes .items .item-border {
+        width: 100%;
+    }
+
+    .hobby .items .item img{
+        height: 180px;
+    }
+
+    .aboutMe, 
+    .hobby,
+    .contact{
+        margin: 50px 30px 0;
+    }
+
+    .aboutMe .container{
+        margin-top: 30px;
+    }
+
+    .aboutMe .container .left,
+    .internship h3,
+    .hobby h3,
+    .contact h3 {
+        margin-bottom: 30px;
+    }
+
+    .aboutMe .container .left img {
+        width: 95%;
+    }
+
+    .aboutMe .container .right p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .internship {
+        margin-bottom: 50px;
+    }
+}

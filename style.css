@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sawarabi Gothic", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1e53;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.header.sticky {
+    background-color: #fff;
+    box-shadow: 0 5px 60px rgba(0, 0, 0, 0.1);
+}
+
+.bars {
+    margin: 0 auto;
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.bars a{
+    position: relative;
+    padding: 0 30px;
+    transition: all .3s ease;
+}
+
+.bars a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #1c1e53;
+    bottom: -6px;
+}
+
+.header .bars a:hover {
+    color: cornflowerblue;
+}
+
+.header.sticky .bars a::before {
+    background-color: cornflowerblue;
+    opacity: .8;
+}
+
+.header.sticky .bars a.active {
+    color: cornflowerblue;
+}
+
+#menu {
+    font-size: 30px;
+    padding: 0 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.main {
+    padding: 60px 0 0;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-heading-image {
+    margin: 60px 0 0 60px;
+    width: 50%;
+    background: url(./images/baseball.JPG) no-repeat bottom;
+    background-position: bottom;
+    background-size: cover;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover; */
+    height: 44vw;
+    border-radius: 5px 5px 400px 5px;
+}
+
+.main .container .right {
+    margin: 60px 60px 0 0;
+}
+
+.main .container .right h1 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.main .container .right h2 {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.main .container .right .separate {
+    background-color: #1c1e53;
+    height: 1px;
+    width: 100%;
+}
+
+.sns {
+    margin-top: 20px;
+}
+
+.sns ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 30px;
+}
+.sns ul li a {
+    transition: all 0.3s ease;
+}
+
+.sns ul li a:hover {
+    color: cornflowerblue;
+}
+
+.aboutMe, 
+.hobby,
+.contact{
+    margin: 100px 60px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe h3,
+.hobby h3,
+.contact h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.aboutMe span {
+    color: rgb(29, 99, 228);
+}
+
+.aboutMe .container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe .container .left {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.aboutMe .container .left img {
+    width: 70%;
+    border-radius: 100px;
+}
+
+.aboutMe .container .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe .container .right p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.internship {
+    position: relative;
+    margin: 100px 60px;
+}
+
+.internship h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.internship .container {
+    position: relative;
+    background-color: #eee;
+    color: #1c1e53;
+    border-radius: 50px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-color: cornflowerblue;
+    max-width: 980px; /* Set your desired max-width */
+    margin: auto; /* Center the Swiper container */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.swiper-slide img {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.swiper-slide h4 {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.sentences {
+    text-align: left;
+}
+.sentences p {
+    font-size: 18px;
+}
+
+.education {
+    background-color: #1c1e53;
+    color: #fff;
+}
+
+.education .container {
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education .container h3 {
+    font-size: 30px;
+}
+
+.boxes .items {
+    display: flex;
+    gap: 30px;
+}
+
+.boxes .items .item-border {
+    border-color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 33%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boxes .items .item-border:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.boxes .items .item-border .item {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxes .items .item-border .item h4 {
+    font-size: 20px;
+}
+
+.boxes .items .item-border .item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.boxes .items .item-border .item h5 {
+    font-size: 18px;
+}
+
+.boxes .items .item-border .item p {
+    font-size: 15px;
+}
+
+.hobby {
+    margin: 100px;
+}
+
+.hobby h3 {
+    margin-bottom: 60px;
+}
+
+.hobby .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.hobby .items .item {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 500px;
+}
+
+.hobby .items .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.hobby .items .item:hover img {
+    transform: scale(1.1);
+}
+
+.item .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), cornflowerblue);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.item:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact h3 {
+    margin-bottom: 60px;
+}
+.contact span {
+    color: rgb(29, 99, 228);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form .head input,
+.contact form .title input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #1c1e53;
+    background-color: #fff;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem rgba(255, 255, 255, .3);
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background-color: #1c1e53;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    border: .2rem solid transparent;
+    transition: all .5s ease;
+}
+
+.contact form .btn:hover {
+    color: #1c1e53;
+    background-color: #fff;
+    border-color: #1c1e53;
+}
+
+.contact form .separate {
+    height: 1px;
+    background-color: #000;
+    margin: 100px 0 40px;
+}
+
+.contact form .sns a{
+    padding: 0 20px;
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.contact form .sns a:hover {
+    color: cornflowerblue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1c1e53;
+    box-shadow: 0 5px 60px rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+footer .name {
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+footer .name a {
+    cursor: pointer;
+    color: #fff;
+}
