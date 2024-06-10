@@ -386,8 +386,16 @@ li {
 .contact h3 {
     margin-bottom: 60px;
 }
+
 .contact span {
     color: rgb(29, 99, 228);
+}
+
+.contact .success-message {
+    font-size: 30px;
+    text-align: center;
+    margin: 100px auto;
+    display: none;
 }
 
 .contact form {
@@ -446,20 +454,28 @@ li {
     border-color: #1c1e53;
 }
 
-.contact form .separate {
+.contact form .separate,
+.contact .success-message .separate {
     height: 1px;
     background-color: #000;
     margin: 100px 0 40px;
 }
 
-.contact form .sns a{
+.contact form .sns a,
+.contact .success-message .sns a{
     padding: 0 20px;
     font-size: 35px;
     transition: all 0.5s ease;
 }
 
-.contact form .sns a:hover {
+.contact form .sns a:hover,
+.contact .success-message .sns a:hover {
     color: cornflowerblue;
+}
+
+/* if one of boxes is empty */
+.error {
+    border-color: red;
 }
 
 footer {
