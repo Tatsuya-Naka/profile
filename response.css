@@ -50,7 +50,8 @@
         padding: 1.0rem 2.4rem;
     }
 
-    .contact form .separate {
+    .contact form .separate,
+    .contact .success-message .separate {
         margin: 80px 0 30px;
     }
 }
@@ -156,6 +157,10 @@
         margin-bottom: 30px;
     }
 
+    .contact .success-message {
+        margin: 50px auto;
+    }
+
     .contact form {
         max-width: 60rem;
         margin: .5rem auto;
@@ -175,11 +180,13 @@
         padding: .8rem 2rem;
     }
 
-    .contact form .separate {
+    .contact form .separate,
+    .contact .success-message .separate {
         margin: 50px 0 20px;
     }
 
-    .contact form .sns a{
+    .contact form .sns a,
+    .contact .success-message .sns a{
         font-size: 30px;
     }
 }
@@ -269,7 +276,8 @@
     .internship h3,
     .education .container h3,
     .hobby h3,
-    .contact h3{
+    .contact h3,
+    .contact .success-message h3{
         font-size: 25px;
         text-align: center;
     }
