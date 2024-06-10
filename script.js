@@ -66,3 +66,58 @@ function sendEmail() {
     var emailAddress = 'ymktr0918gromin28@gmail.com';
     window.location.href = 'mailto:' + emailAddress;
 }
+
+// define my user-id
+(function() {
+    emailjs.init('Z8LPdTq27oGYKACLz');
+})();
+
+// send email from my web page 
+document.querySelector('section #contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var fullName = document.querySelector('.head input').value;
+    var emailAddress = document.querySelector('.input-box #emailAddress').value;
+    var phoneNumber = document.querySelector('.input-box #phoneNumber').value;
+    var title = document.querySelector('.title input').value;
+    var message = document.querySelector('textarea').value;
+
+    // if one of message is missed
+    var fields = [document.querySelector('.head input'), document.querySelector('.input-box #emailAddress'), document.querySelector('.input-box #phoneNumber'), document.querySelector('.title input'), document.querySelector('textarea')];
+    fields.forEach(function(field) {
+        field.classList.remove('error');
+    });
+
+    var hasError = false;
+    fields.forEach(function(field) {
+        if (!field.value) {
+            field.classList.add('error');
+            hasError = true;
+        }
+    });
+
+    if (hasError) {
+        return;
+    }
+
+    var templateParams = {
+        from_name: fullName,
+        to_name: "Tatsuya NAKAGOMI",
+        title: title,
+        message: message,
+        fullName: fullName,
+        emailAddress: emailAddress,
+        phoneNumber: phoneNumber
+    };
+
+    emailjs.send('09tatsutapotetonano28', 'template_tatsutapoteto09', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.querySelector('section #contactForm').style.display = 'none';
+            document.querySelector('.contact .success-message').style.display = 'block';
+            // alert('Message sent successfully!');
+        }, function(error) {
+            console.log('FAILED...', error);
+            // alert('Failed to send the message. Please try again later');
+        });
+});
