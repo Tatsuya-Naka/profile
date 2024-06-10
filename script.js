@@ -52,14 +52,12 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-document.querySelector('.email a').addEventListener('click', function(event) {
-    event.preventDefault();
-    sendEmail();
-});
-
-document.querySelector('a.footerEmail ').addEventListener('click', function(event) {
-    event.preventDefault();
-    sendEmail();
+let emails = document.querySelectorAll('.email a, .footerEmail, .afterEmail');
+emails.forEach(email => {
+    email.addEventListener('click', (event) => {
+        event.preventDefault();
+        sendEmail();
+    });
 });
 
 function sendEmail() {
