@@ -390,6 +390,10 @@
     .sns ul li a {
         color: #fff;
     }
+
+    .portfolio-layer p {
+        font-size: 15px;
+    } 
 }
 
 @media screen and (max-width: 600px) {
