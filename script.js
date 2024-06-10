@@ -75,7 +75,6 @@ function sendEmail() {
 // send email from my web page 
 document.querySelector('section #contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert('Message sent successfully!');
 
     var fullName = document.querySelector('.head input').value;
     var emailAddress = document.querySelector('.input-box #emailAddress').value;
@@ -116,9 +115,9 @@ document.querySelector('section #contactForm').addEventListener('submit', functi
             console.log('SUCCESS!', response.status, response.text);
             document.querySelector('section #contactForm').style.display = 'none';
             document.querySelector('.contact .success-message').style.display = 'block';
-            alert('Message sent successfully!');
+            // alert('Message sent successfully!');
         }, function(error) {
             console.log('FAILED...', error);
-            alert('Failed to send the message. Please try again later');
+            // alert('Failed to send the message. Please try again later');
         });
 });
